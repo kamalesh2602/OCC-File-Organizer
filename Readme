@@ -1,0 +1,18 @@
+# Smart File Organizer
+
+Python CLI application that organizes files automatically.
+
+## Features
+- Categorizes files by type
+- CLI based
+- Logging support
+- Unit testing
+- Dockerized
+- CI/CD pipeline
+
+## Run locally
+python main.py /path/to/folder
+
+## Run with Docker
+docker build -t file-organizer .
+docker run --rm -v /folder:/data file-organizer /data
