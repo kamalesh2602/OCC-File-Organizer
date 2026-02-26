@@ -1,18 +1,74 @@
 # Smart File Organizer
 
-Python CLI application that organizes files automatically.
+A Dockerized Python CLI application that automatically organizes files into categorized folders.
 
-## Features
-- Categorizes files by type
+---
+
+## 🚀 Features
+
+- Organizes files by type (Images, Documents, Audio, Videos, Others)
 - CLI based
-- Logging support
-- Unit testing
+- Unit tested
+- Lint enforced
 - Dockerized
-- CI/CD pipeline
+- CI/CD enabled
+- Published on DockerHub
 
-## Run locally
+---
+
+# 🐍 Option 1 — Run Locally (Python)
+
+### 1️⃣ Install dependencies
+
+pip install -r requirements.txt
+
+### 2️⃣ Run
+
 python main.py /path/to/folder
 
-## Run with Docker
+Example:
+
+python main.py test_folder
+
+---
+
+# 🐳 Option 2 — Run Using DockerHub (Recommended)
+
+### 1️⃣ Pull Image
+
+docker pull 23z332/file-organizer:1.0.0
+
+### 2️⃣ Run
+
+Linux / Mac:
+
+docker run --rm -v "$(pwd)":/data 23z332/file-organizer:1.0.0 /data
+
+Windows (PowerShell):
+
+docker run --rm -v "%cd%":/data 23z332/file-organizer:1.0.0 /data
+
+---
+
+# 🛠 Option 3 — Build Docker Locally
+
 docker build -t file-organizer .
-docker run --rm -v /folder:/data file-organizer /data
+docker run --rm -v "$(pwd)":/data file-organizer /data
+
+---
+
+# 🧪 Run Tests
+
+pytest
+
+---
+
+# 📦 DockerHub Repository
+
+https://hub.docker.com/r/23z332/file-organizer
+
+---
+
+# 🏷 Version
+
+Current Version: 1.0.0
