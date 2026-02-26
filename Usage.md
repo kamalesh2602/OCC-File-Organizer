@@ -5,4 +5,11 @@
    docker pull 23z332/file-organizer:1.0.0
 
 3. Run:
-   docker run --rm -v "$(pwd)":/data 23z332/file-organizer:1.0.0 /data
+
+    Windows:
+        docker run --rm -v "%cd%":/data 23z332/file-organizer:1.0.0 /data
+    
+    Linux :
+        docker run --rm -v "$(pwd)":/data 23z332/file-organizer:1.0.0 /data
+    
+    
