@@ -6,6 +6,7 @@ FILE_CATEGORIES = {
     "Documents": [".pdf", ".docx", ".txt"],
     "Videos": [".mp4", ".mkv"],
     "Audio": [".mp3", ".wav"],
+    "Zip": [".zip", ".rar"],
 }
 
 
